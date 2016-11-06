@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Sites Of Interest</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="page-home">
+  <ion-card *ngFor="let site of sites" (click)="goToSiteDetails(site.id)">
+    <img [src]="site.image" class="site-image">
+
+    <ion-item>
+      <h2>{{site.name}}</h2>
+    </ion-item>
+  </ion-card>
+
+</ion-content>

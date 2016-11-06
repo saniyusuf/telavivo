@@ -1,0 +1,44 @@
+<ion-header>  
+
+  <ion-navbar color="primary">    
+    <ion-title>
+      {{conversation.title}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-icon name="pizza" item-left large color="primary"></ion-icon>
+      <h2>{{conversation.food}}</h2>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-icon name="pin" item-left large color="primary"></ion-icon>
+      <h2>{{conversation.hotel}}</h2>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-icon name="cash" item-left large color="primary"></ion-icon>
+      <h2>{{conversation.buy}}</h2>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-icon name="outlet" item-left large color="primary"></ion-icon>
+      <h2>{{conversation.adapter}}</h2>
+    </ion-item>
+  </ion-card>
+
+  <ion-item>
+    <ion-label>{{conversation.enable}}</ion-label>
+    <ion-toggle [(ngModel)]="isHebrewEnabled" (ionChange)="changeLanguage()"></ion-toggle>
+  </ion-item>
+
+</ion-content>
