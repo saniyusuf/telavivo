@@ -6,7 +6,6 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { SiteDetail } from '../pages/site-detail/site-detail';
-import {PopOver} from '../pages/pop-over/pop-over';
 import { Site } from '../providers/site';
 
 @NgModule({
@@ -16,8 +15,7 @@ import { Site } from '../providers/site';
     ContactPage,
     HomePage,
     TabsPage,
-    SiteDetail,
-    PopOver
+    SiteDetail  
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -29,9 +27,7 @@ import { Site } from '../providers/site';
     ContactPage,
     HomePage,
     TabsPage,
-    SiteDetail,
-    PopOver
-
+    SiteDetail
   ],
   providers: [Site]
 })
