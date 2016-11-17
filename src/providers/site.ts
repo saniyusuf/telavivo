@@ -24,7 +24,7 @@ export class Site {
     }
 
     return new Promise((resolve, reject)=>{
-      this.http.get('https://api.myjson.com/bins/41w4w')
+      this.http.get('https://api.myjson.com/bins/4kwpm')
       .map(response => response.json())
       .subscribe((sites)=>{
         this.sites = sites;

@@ -16,8 +16,8 @@ import { Site } from '../../providers/site';
 })
 
 export class SiteDetail {
-  private siteID;
-  private siteDetail: any;
+  siteID;
+  siteDetail: any;
 
   constructor(private navParams: NavParams, private site: Site) {
     this.siteID = navParams.get('siteID');

@@ -11,7 +11,7 @@ import { Site } from '../../providers/site';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  private sites: Array<{}>;
+  sites: Array<{}>;
 
   constructor(public navCtrl: NavController, private site: Site) {}
 

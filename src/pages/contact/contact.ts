@@ -7,7 +7,7 @@ import { Platform } from 'ionic-angular';
 })
 export class ContactPage {
 
-  private englishConversation = {
+  englishConversation = {
     food: 'Where do I get food?',
     hotel: 'How do I get to Ben Yehuda St?',
     buy: 'How much is this?',
@@ -16,7 +16,7 @@ export class ContactPage {
     title: 'Conversation'
   };
 
-   private hebrewConversation = {
+  hebrewConversation = {
     food: 'איפה אני מקבל מזון?',
     hotel: 'כיצד אוכל להגיע רחוב בן יהודה?',
     buy: 'כמה זה עולה?',
@@ -25,8 +25,8 @@ export class ContactPage {
     title: "שִׂיחָה"
   };
 
-  private conversation;
-  private isHebrewEnabled = false;
+  conversation;
+  isHebrewEnabled = false;
 
   constructor(private platfrom: Platform) {
     this.conversation = this.englishConversation;
